@@ -8,7 +8,7 @@ function Routes() {
       <Route exact path="/">
         <Home />
       </Route>
-      <Route path="cart">
+      <Route path="/cart">
         <Cart />
       </Route>
     </Switch>

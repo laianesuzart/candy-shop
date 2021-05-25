@@ -16,13 +16,13 @@ function redirectTo(path) {
         <img src={logo} alt="Logo Candy Shop" style={{ maxWidth: "50%", marginRight: 'auto' }}/>
       {isHome ? (
         <Tooltip title="Bolsa">
-          <Fab color="secondary" size="small" onClick={() => redirectTo("cart")}>
+          <Fab color="secondary" size="small" onClick={() => redirectTo("/cart")}>
             <LocalMallIcon />
           </Fab>
         </Tooltip>
       ) : (
         <Tooltip title="Início">
-          <Fab color="primary" size="small" onClick={() => redirectTo("/")}>
+          <Fab color="secondary" size="small" onClick={() => redirectTo("/")}>
             <HomeIcon />
           </Fab>
         </Tooltip>
