@@ -1,4 +1,5 @@
-import { Button, Paper } from "@material-ui/core";
+import { Button} from "@material-ui/core";
+import {Container} from './style';
 import {useDispatch} from 'react-redux';
 import {addToCart, removeFromCart} from '../../store/modules/cart/actions';
 
@@ -7,10 +8,10 @@ function Card({ product, isRemovable = false }) {
   const dispatch = useDispatch();
 
   return (
-    <Paper>
+    <Container>
       <img src={image} alt={name} />
-      <h2>{name}</h2>
-      <p>{price}</p>
+      <h3>{name}</h3>
+      <p>{price.toLocaleString('pt-BR', { minimumFractionDigits: 2, style: 'currency', currency: 'BRL' })}</p>
       {isRemovable ? (
         <Button onClick={() => dispatch(removeFromCart(id))} variant="contained" color="primary">
           Remover todos
@@ -20,7 +21,7 @@ function Card({ product, isRemovable = false }) {
           Colocar na bolsa
         </Button>
       )}
-    </Paper>
+    </Container>
   );
 }
 
