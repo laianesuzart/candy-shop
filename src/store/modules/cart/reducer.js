@@ -1,15 +1,16 @@
 import { ADD_CART, REMOVE_CART } from "./actionsTypes";
 
-function cartReducer(state = [], action) {
+const initialState = JSON.parse(localStorage.getItem("cart")) || [];
+
+function cartReducer(state = initialState, action) {
   switch (action.type) {
     case ADD_CART:
       const { product } = action;
       return [...state, product];
 
     case REMOVE_CART:
-      const { id } = action;
-      const newList = state.filter((product) => product.id !== id);
-      return newList;
+      const { list } = action;
+      return list;
 
     default:
       return state;

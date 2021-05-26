@@ -7,9 +7,9 @@ export function addToCart(product) {
   };
 }
 
-export function removeFromCart(id) {
+export function removeFromCart(list) {
   return {
     type: REMOVE_CART,
-    id,
+    list,
   };
 }
