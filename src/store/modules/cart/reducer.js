@@ -8,9 +8,10 @@ function cartReducer(state = initialState, action) {
       const { product } = action;
       return [...state, product];
 
-    case REMOVE_CART:
+    case REMOVE_CART: {
       const { list } = action;
       return list;
+    }
 
     default:
       return state;

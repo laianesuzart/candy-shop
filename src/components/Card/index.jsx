@@ -1,10 +1,14 @@
 import { Button, Fab, Tooltip } from "@material-ui/core";
 import { Container, Wrapper } from "./style";
-import { useDispatch} from "react-redux";
+import { useDispatch } from "react-redux";
 import {
   addToCartThunk,
   removeFromCartThunk,
 } from "../../store/modules/cart/thunks";
+import {
+  addOneItemThunk,
+  removeOneItemThunk,
+} from "../../store/modules/product/thunks";
 import RemoveIcon from "@material-ui/icons/Remove";
 import AddIcon from "@material-ui/icons/Add";
 import { useState } from "react";
@@ -12,17 +16,17 @@ import { useState } from "react";
 function Card({ product, isRemovable = false }) {
   const { image, name, price, id } = product;
   const dispatch = useDispatch();
-  const cart  = JSON.parse(localStorage.getItem("cart")) || [];
+  const cart  = JSON.parse(localStorage.getItem("cart")) || [];;
   const findProduct = cart.find((actual) => actual.id === product.id);
   const [quantity, setQuantity] = useState(findProduct?.quantity);
 
   function handleAdd() {
-    dispatch(addToCartThunk(product));
+    dispatch(addOneItemThunk(id));
     setQuantity(quantity + 1);
   }
 
   function handleRemove() {
-    dispatch(removeFromCartThunk(id))
+    dispatch(removeOneItemThunk(id));
     setQuantity(quantity - 1);
   }
 
@@ -43,7 +47,7 @@ function Card({ product, isRemovable = false }) {
             <span>Quantidade: </span>
             <span style={{ marginLeft: "auto" }}>
               <Tooltip color="primary" title="Remover">
-                <Fab onClick={handleRemove}size="small">
+                <Fab onClick={handleRemove} size="small">
                   <RemoveIcon />
                 </Fab>
               </Tooltip>{" "}
@@ -56,7 +60,7 @@ function Card({ product, isRemovable = false }) {
             </span>
           </Wrapper>
           <Button
-            onClick={() => dispatch(removeFromCartThunk(id, true))}
+            onClick={() => dispatch(removeFromCartThunk(id))}
             variant="contained"
             color="primary"
           >
