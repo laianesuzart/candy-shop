@@ -15,13 +15,21 @@ export const addToCartThunk = (product) => (dispatch) => {
 
 export const removeFromCartThunk = (id, all) => (dispatch, getStore) => {
   const { cart } = getStore();
+  const list = cart.filter((product) => product.id !== id);
+  const findProduct = cart.find(product => product.id === id);
   if (all) {
-    const list = cart.filter((product) => product.id !== id);
+    findProduct.quantity = 0;
     localStorage.setItem("cart", JSON.stringify(list));
     dispatch(removeFromCart(list));
   } else {
-    const findProduct = cart.find(product => product.id === id);
     findProduct.quantity -= 1;
-    localStorage.setItem("cart", JSON.stringify(cart));
+
+    if (findProduct.quantity === 1) {
+      localStorage.setItem("cart", JSON.stringify(list));
+      dispatch(removeFromCart(list));
+    } else {
+      
+      localStorage.setItem("cart", JSON.stringify(cart));
+    }
   }
 };
