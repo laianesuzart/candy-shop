@@ -13,20 +13,20 @@ import RemoveIcon from "@material-ui/icons/Remove";
 import AddIcon from "@material-ui/icons/Add";
 import { useState } from "react";
 
-function Card({ product, isRemovable = false }) {
+function Card({ product, isRemovable = false, setTotal }) {
   const { image, name, price, id } = product;
   const dispatch = useDispatch();
-  const cart  = JSON.parse(localStorage.getItem("cart")) || [];;
+  const cart  = JSON.parse(localStorage.getItem("cart")) || [];
   const findProduct = cart.find((actual) => actual.id === product.id);
   const [quantity, setQuantity] = useState(findProduct?.quantity);
 
   function handleAdd() {
-    dispatch(addOneItemThunk(id));
+    dispatch(addOneItemThunk(id, setTotal));
     setQuantity(quantity + 1);
   }
 
   function handleRemove() {
-    dispatch(removeOneItemThunk(id));
+    dispatch(removeOneItemThunk(id, setTotal));
     setQuantity(quantity - 1);
   }
 
@@ -60,7 +60,7 @@ function Card({ product, isRemovable = false }) {
             </span>
           </Wrapper>
           <Button
-            onClick={() => dispatch(removeFromCartThunk(id))}
+            onClick={() => dispatch(removeFromCartThunk(id, setTotal))}
             variant="contained"
             color="primary"
           >
@@ -69,7 +69,7 @@ function Card({ product, isRemovable = false }) {
         </>
       ) : (
         <Button
-          onClick={() => dispatch(addToCartThunk(product))}
+          onClick={() => dispatch(addToCartThunk(product, setTotal))}
           variant="contained"
           color="secondary"
         >

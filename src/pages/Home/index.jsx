@@ -5,7 +5,7 @@ import Title from "../../components/Title";
 import CardContainer from "../../components/CardContainer";
 import Card from "../../components/Card";
 
-function Home() {
+function Home({setTotal}) {
   const { products } = useSelector((store) => store);
   return (
     <div>
@@ -20,7 +20,7 @@ function Home() {
         <CardContainer>
           {products.map((product) => (
             <li key={product.id}>
-              <Card product={product} />
+              <Card product={product} setTotal={setTotal}/>
             </li>
           ))}
         </CardContainer>

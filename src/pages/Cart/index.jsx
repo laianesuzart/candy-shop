@@ -1,4 +1,5 @@
 import { useSelector } from "react-redux";
+
 import { motion } from "framer-motion";
 import { Grid } from "@material-ui/core";
 import { CheckOut, EmptyCart } from "./style";
@@ -7,10 +8,9 @@ import Title from "../../components/Title";
 import CardContainer from "../../components/CardContainer";
 import Card from "../../components/Card";
 
-function Cart() {
+function Cart({total, setTotal}) {
   const { cart } = useSelector((store) => store);
-  const total = cart.reduce((acc, product) => acc + (product.price * product.quantity), 0);
-  
+
   return (
     <div>
       <Header />
@@ -27,7 +27,7 @@ function Cart() {
               <CardContainer>
                 {cart.map((product) => (
                   <li key={product.id}>
-                    <Card product={product} isRemovable/>
+                    <Card product={product} setTotal={setTotal} isRemovable/>
                   </li>
                 ))}
               </CardContainer>
