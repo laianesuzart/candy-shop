@@ -15,7 +15,7 @@ function Header({ isHome = false }) {
   
   return (
     <AppBar position="static">
-      <Toolbar style={{ backgroundColor: "lightpink" }}>
+      <Toolbar color="primary">
         <img
           src={logo}
           alt="Logo Candy Shop"
