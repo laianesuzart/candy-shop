@@ -18,6 +18,19 @@ const GlobalStyle = createGlobalStyle`
         border: none;
     }
 
+    ::-webkit-scrollbar {
+        width: 0.5rem;
+    }
+    
+    ::-webkit-scrollbar-track {
+        background-color: #FFF;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background-color: deeppink;
+    }
+
+
 `;
 
 export default GlobalStyle;
