@@ -1,6 +1,7 @@
 import { useSelector } from "react-redux";
 import { motion } from "framer-motion";
-import { EmptyCart } from "./style";
+import { Grid } from "@material-ui/core";
+import { CheckOut, EmptyCart } from "./style";
 import Header from "../../components/Header";
 import Title from "../../components/Title";
 import CardContainer from "../../components/CardContainer";
@@ -8,6 +9,8 @@ import Card from "../../components/Card";
 
 function Cart() {
   const { cart } = useSelector((store) => store);
+  const total = cart.reduce((acc, product) => acc + (product.price * product.quantity), 0);
+  
   return (
     <div>
       <Header />
@@ -19,13 +22,30 @@ function Cart() {
       >
         <Title>Minha Bolsa</Title>
         {cart.length > 0 ? (
-          <CardContainer>
-            {cart.map((product) => (
-              <li key={product.id}>
-                <Card product={product} isRemovable />
-              </li>
-            ))}
-          </CardContainer>
+          <Grid container>
+            <Grid item xs={12} sm={10}>
+              <CardContainer>
+                {cart.map((product) => (
+                  <li key={product.id}>
+                    <Card product={product} isRemovable/>
+                  </li>
+                ))}
+              </CardContainer>
+            </Grid>
+            <Grid item xs={12} sm={2}>
+              <CheckOut>
+                <p>Total</p>
+                <p>
+                  {
+                    total.toLocaleString("pt-BR", {
+                      minimumFractionDigits: 2,
+                      style: "currency",
+                      currency: "BRL",
+                    })}
+                </p>
+              </CheckOut>
+            </Grid>
+          </Grid>
         ) : (
           <EmptyCart>
             <p>Sua bolsa está vazia.</p>

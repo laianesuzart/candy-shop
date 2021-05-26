@@ -17,3 +17,15 @@ export const EmptyCart = styled.div`
         color: #c13be2d1;
     }
 `;
+
+export const CheckOut = styled.div`
+    color: #ec4b68;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    background-color: #FFF;
+    border-radius: 10px;
+    padding: 20px;
+    width: 90%;
+    margin: 0 auto;
+`;
