@@ -1,5 +1,4 @@
 import { useSelector } from "react-redux";
-
 import { motion } from "framer-motion";
 import { Grid } from "@material-ui/core";
 import { CheckOut, EmptyCart } from "./style";

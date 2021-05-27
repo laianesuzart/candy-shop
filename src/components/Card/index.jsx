@@ -5,10 +5,6 @@ import {
   addToCartThunk,
   removeFromCartThunk,
 } from "../../store/modules/cart/thunks";
-import {
-  addOneItemThunk,
-  removeOneItemThunk,
-} from "../../store/modules/product/thunks";
 import RemoveIcon from "@material-ui/icons/Remove";
 import AddIcon from "@material-ui/icons/Add";
 import { useState } from "react";
