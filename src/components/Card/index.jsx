@@ -21,12 +21,12 @@ function Card({ product, isRemovable = false, setTotal }) {
   const [quantity, setQuantity] = useState(findProduct?.quantity);
 
   function handleAdd() {
-    dispatch(addOneItemThunk(id, setTotal));
+    dispatch(addToCartThunk(product, setTotal));
     setQuantity(quantity + 1);
   }
 
   function handleRemove() {
-    dispatch(removeOneItemThunk(id, setTotal));
+    dispatch(removeFromCartThunk(id, "removeOne", setTotal));
     setQuantity(quantity - 1);
   }
 
@@ -60,7 +60,7 @@ function Card({ product, isRemovable = false, setTotal }) {
             </span>
           </Wrapper>
           <Button
-            onClick={() => dispatch(removeFromCartThunk(id, setTotal))}
+            onClick={() => dispatch(removeFromCartThunk(id, "removeAll", setTotal))}
             variant="contained"
             color="primary"
           >

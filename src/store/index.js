@@ -7,7 +7,7 @@ import productReducer from './modules/product/reducer';
 const reducers = combineReducers({
   products: productsReducer,
   cart: cartReducer,
-  product: productReducer
+  // product: productReducer
 });
 
 const store = createStore(reducers, applyMiddleware(thunk));
