@@ -35,7 +35,11 @@ export const Wrapper = styled.p`
   }
 
   button {
-    width: 20px;
-    height: 10px;
+    width: 30px;
+    height: 20px;
+
+    svg {
+      font-size: 1rem;
+    }
   }
 `;

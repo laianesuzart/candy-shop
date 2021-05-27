@@ -12,9 +12,9 @@ function Header({ isHome = false }) {
   function redirectTo(path) {
     history.push(path);
   }
-  
+
   return (
-    <AppBar position="static">
+    <AppBar>
       <Toolbar color="primary">
         <img
           src={logo}
