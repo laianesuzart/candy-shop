@@ -1,6 +1,6 @@
 import { Button, Fab, Tooltip } from "@material-ui/core";
 import { Container, Wrapper } from "./style";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import {
   addToCartThunk,
   removeFromCartThunk,
@@ -11,10 +11,10 @@ import { useState } from "react";
 
 function Card({ product, isRemovable = false, setTotal }) {
   const { image, name, price, id } = product;
-  const dispatch = useDispatch();
-  const cart  = JSON.parse(localStorage.getItem("cart")) || [];
+  const { cart } = useSelector((store) => store);
   const findProduct = cart.find((actual) => actual.id === product.id);
   const [quantity, setQuantity] = useState(findProduct?.quantity);
+  const dispatch = useDispatch();
 
   function handleAdd() {
     dispatch(addToCartThunk(product, setTotal));
@@ -56,7 +56,9 @@ function Card({ product, isRemovable = false, setTotal }) {
             </span>
           </Wrapper>
           <Button
-            onClick={() => dispatch(removeFromCartThunk(id, "removeAll", setTotal))}
+            onClick={() =>
+              dispatch(removeFromCartThunk(id, "removeAll", setTotal))
+            }
             variant="contained"
             color="primary"
           >

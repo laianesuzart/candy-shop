@@ -5,7 +5,6 @@ const initialState = JSON.parse(localStorage.getItem("cart")) || [];
 function cartReducer(state = initialState, action) {
   switch (action.type) {
     case ADD_CART: {
-
       const { list } = action;
       return list;
     }

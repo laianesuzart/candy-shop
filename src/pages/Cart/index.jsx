@@ -7,7 +7,7 @@ import Title from "../../components/Title";
 import CardContainer from "../../components/CardContainer";
 import Card from "../../components/Card";
 
-function Cart({total, setTotal}) {
+function Cart({ total, setTotal }) {
   const { cart } = useSelector((store) => store);
 
   return (
@@ -26,7 +26,7 @@ function Cart({total, setTotal}) {
               <CardContainer>
                 {cart.map((product) => (
                   <li key={product.id}>
-                    <Card product={product} setTotal={setTotal} isRemovable/>
+                    <Card product={product} setTotal={setTotal} isRemovable />
                   </li>
                 ))}
               </CardContainer>
@@ -35,12 +35,11 @@ function Cart({total, setTotal}) {
               <CheckOut>
                 <p>Total</p>
                 <p>
-                  {
-                    total.toLocaleString("pt-BR", {
-                      minimumFractionDigits: 2,
-                      style: "currency",
-                      currency: "BRL",
-                    })}
+                  {total.toLocaleString("pt-BR", {
+                    minimumFractionDigits: 2,
+                    style: "currency",
+                    currency: "BRL",
+                  })}
                 </p>
               </CheckOut>
             </Grid>

@@ -1,7 +1,6 @@
 import { addToCart, removeFromCart } from "./actions";
 
 export const addToCartThunk = (product, setTotal) => (dispatch, getStore) => {
-  // const list = JSON.parse(localStorage.getItem("cart")) || [];
   const { cart } = getStore();
   const findProduct = cart.find((actual) => actual.id === product.id);
 
@@ -16,27 +15,30 @@ export const addToCartThunk = (product, setTotal) => (dispatch, getStore) => {
 
   localStorage.setItem("cart", JSON.stringify(cart));
 
-  setTotal(cart.reduce((acc, product) => acc + (product.price * product.quantity), 0));
+  setTotal(
+    cart.reduce((acc, product) => acc + product.price * product.quantity, 0)
+  );
 };
 
-export const removeFromCartThunk = (id, howMany, setTotal) => (dispatch, getStore) => {
-  // const cart = JSON.parse(localStorage.getItem("cart")) || [];
-  const { cart } = getStore();
-  const findProduct = cart.find((product) => product.id === id);
-  const list = cart.filter((product) => product.id !== id);
+export const removeFromCartThunk =
+  (id, howMany, setTotal) => (dispatch, getStore) => {
+    const { cart } = getStore();
+    const findProduct = cart.find((product) => product.id === id);
+    const list = cart.filter((product) => product.id !== id);
 
-  if (findProduct.quantity === 1 ||   howMany === 'removeAll') {
-
-    findProduct.quantity = 0;
-    dispatch(removeFromCart(list));
-    localStorage.setItem("cart", JSON.stringify(list));
-    setTotal(list.reduce((acc, product) => acc + (product.price * product.quantity), 0));
-  } else {
-    findProduct.quantity -= 1;
-    dispatch(removeFromCart(cart));
-    localStorage.setItem("cart", JSON.stringify(cart));
-    setTotal(cart.reduce((acc, product) => acc + (product.price * product.quantity), 0));
-  }
-
-
-};
+    if (findProduct.quantity === 1 || howMany === "removeAll") {
+      findProduct.quantity = 0;
+      dispatch(removeFromCart(list));
+      localStorage.setItem("cart", JSON.stringify(list));
+      setTotal(
+        list.reduce((acc, product) => acc + product.price * product.quantity, 0)
+      );
+    } else {
+      findProduct.quantity -= 1;
+      dispatch(removeFromCart(cart));
+      localStorage.setItem("cart", JSON.stringify(cart));
+      setTotal(
+        cart.reduce((acc, product) => acc + product.price * product.quantity, 0)
+      );
+    }
+  };

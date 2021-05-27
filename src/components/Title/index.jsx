@@ -1,7 +1,7 @@
-import {TitleStyled} from './style'
+import { TitleStyled } from "./style";
 
-function Title({children}) {
-    return <TitleStyled>{children}</TitleStyled>
+function Title({ children }) {
+  return <TitleStyled>{children}</TitleStyled>;
 }
 
 export default Title;
