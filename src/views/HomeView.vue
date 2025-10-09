@@ -1,6 +1,6 @@
 <script setup>
   import ProductCard from '@/components/ProductCard.vue';
-  import products from '@/products';
+  import products from '@/data/products.json';
 </script>
 
 <style>

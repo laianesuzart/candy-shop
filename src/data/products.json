@@ -1,0 +1,130 @@
+[
+  {
+    "id": 1,
+    "name": "Pocky Strawberry 1.45 oz",
+    "price": 3.5,
+    "image": "http://d3ugyf2ht6aenh.cloudfront.net/stores/001/173/688/products/pocky-morango11-87fa4e27131f6c364415894280779486-640-0.jpg",
+    "discount": 0,
+    "stock": 98
+  },
+  {
+    "id": 2,
+    "name": "Pepero White Cookie 1.13 oz",
+    "price": 2,
+    "image": "https://2519.cdn.simplo7.net/static/2519/sku/salgadinhos-e-biscoitos-biscoitos-doces-biscoito-pepero-chocolate-branco-white-cookie-lotte-32-gramas-1466189665570.jpg",
+    "discount": 0,
+    "stock": 79
+  },
+  {
+    "id": 3,
+    "name": "Gummies 2.2 lb",
+    "price": 10,
+    "image": "https://http2.mlstatic.com/D_NQ_NP_645788-MLB42983692000_082020-O.jpg",
+    "discount": 0.2,
+    "stock": 79
+  },
+  {
+    "id": 4,
+    "name": "Jelly Beans 24.7 oz",
+    "price": 3,
+    "image": "https://images.tcdn.com.br/img/img_prod/388802/bala_de_goma_deliket_jelly_beans_frutas_acidas_sortida_700g_33641_1_c6458db465e2f8bbc4cffe6d090b61a6.jpg",
+    "discount": 0.05,
+    "stock": 97
+  },
+  {
+    "id": 5,
+    "name": "Snickers 20 pcs * 1.59 oz each",
+    "price": 15,
+    "image": "https://a-static.mlcdn.com.br/1500x1500/chocolate-snickers-45g-c-20-mars/docemalu/16704/46605cf765335d444a3bc740370edf67.jpg",
+    "discount": 0.1,
+    "stock": 76
+  },
+  {
+    "id": 6,
+    "name": "Twix 2.82 oz",
+    "price": 1,
+    "image": "https://americanas.vtexassets.com/arquivos/ids/509723/89153658_1SZ.jpg?v=638750830081870000",
+    "discount": 0,
+    "stock": 25
+  },
+  {
+    "id": 7,
+    "name": "White Chocolate with Strawberry 3.17 oz",
+    "price": 3,
+    "image": "https://images.tcdn.com.br/img/img_prod/861878/florestal_chocolate_barra_coracao_branco_90g_4131_1_ed673975f031be26bc946ddfd132c6ff.jpg",
+    "discount": 0,
+    "stock": 25
+  },
+  {
+    "id": 8,
+    "name": "White Chocolate with Sprinkles 3.17 oz",
+    "price": 3,
+    "image": "https://cf.shopee.com.br/file/0a93eaaff13b4b63ca95d6e2e9c6f4ee",
+    "discount": 0.08,
+    "stock": 97
+  },
+  {
+    "id": 1,
+    "name": "KitKat Milk Chocolate 1.46 oz",
+    "price": 2.25,
+    "image": "https://d21wiczbqxib04.cloudfront.net/wFntq97XFwXwFMzE5EBI_YYEyEs=/fit-in/400x400/filters:fill(FFFFFF):background_color(white)/https://osuper-ecommerce-superhiperbom.s3.sa-east-1.amazonaws.com/f18c90e2-204257800auto.webp",
+    "discount": 0,
+    "stock": 150
+  },
+  {
+    "id": 2,
+    "name": "KitKat White Chocolate 1.46 oz",
+    "price": 1.99,
+    "image": "https://cdn.awsli.com.br/600x700/1305/1305297/produto/61974915/ef1ba809af.jpg",
+    "discount": 0,
+    "stock": 120
+  },
+  {
+    "id": 3,
+    "name": "KitKat Dark Chocolate 1.46 oz",
+    "price": 1.99,
+    "image": "https://tfckoe.vteximg.com.br/arquivos/ids/283524-280-280/18130f5d-c0bb-4f26-9af8-75c645d33331.jpg?v=638454182326430000",
+    "discount": 0,
+    "stock": 100
+  },
+  {
+    "id": 4,
+    "name": "KitKat Vegan 1.46 oz",
+    "price": 2.49,
+    "image": "https://americanas.vtexassets.com/arquivos/ids/537288/4546515604_1_xlarge.jpg?v=638750834055830000",
+    "discount": 0,
+    "stock": 80
+  },
+  {
+    "id": 5,
+    "name": "KitKat Hazelnut 1.46 oz",
+    "price": 1.99,
+    "image": "https://www.madewithnestle.ca/content/dam/nestlecanadaincprogram/kit-kat/en/products/Kitkat%20Hazelnut.jpg",
+    "discount": 0,
+    "stock": 110
+  },
+  {
+    "id": 6,
+    "name": "KitKat Chunky 1.41 oz",
+    "price": 1.99,
+    "image": "https://www.americanas.com.br/_next/image?url=https%3A%2F%2Famericanas.vtexassets.com%2Farquivos%2Fids%2F545139%2F2914913316_1SZ.jpg%3Fv%3D638750836416570000&w=768&q=90",
+    "discount": 0,
+    "stock": 140
+  },
+  {
+    "id": 9,
+    "name": "Chocolate with Cereal 3.17 oz",
+    "price": 3,
+    "image": "https://images.tcdn.com.br/img/img_prod/861878/florestal_chocolate_barra_dinossauros_90g_4139_1_f89f7141ed4224ae32d4f548ec2a0373.jpg",
+    "discount": 0,
+    "stock": 0
+  },
+  {
+    "id": 10,
+    "name": "Fini Tubes 2.82 oz",
+    "price": 1.5,
+    "image": "https://www.palaciodasfestas.com.br/pub/media/catalog/product/cache/6fb2a49fda90fa3bc27e8290a21c793e/t/u/tubes_morango_brilho_80g_1000x1000.jpg",
+    "discount": 0,
+    "stock": 0
+  }
+]
