@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "id": "cc38bd58-aa62-520d-8629-b2ac223a5dcc",
     "name": "Pocky Strawberry 1.45 oz",
     "price": 3.5,
     "image": "http://d3ugyf2ht6aenh.cloudfront.net/stores/001/173/688/products/pocky-morango11-87fa4e27131f6c364415894280779486-640-0.jpg",
@@ -8,7 +8,7 @@
     "stock": 98
   },
   {
-    "id": 2,
+    "id": "632c0957-cb01-5469-9944-18e80a4e223b",
     "name": "Pepero White Cookie 1.13 oz",
     "price": 2,
     "image": "https://2519.cdn.simplo7.net/static/2519/sku/salgadinhos-e-biscoitos-biscoitos-doces-biscoito-pepero-chocolate-branco-white-cookie-lotte-32-gramas-1466189665570.jpg",
@@ -16,7 +16,7 @@
     "stock": 79
   },
   {
-    "id": 3,
+    "id": "31a91abc-1f36-542b-8a6a-8a5ae99a4831",
     "name": "Gummies 2.2 lb",
     "price": 10,
     "image": "https://http2.mlstatic.com/D_NQ_NP_645788-MLB42983692000_082020-O.jpg",
@@ -24,7 +24,7 @@
     "stock": 79
   },
   {
-    "id": 4,
+    "id": "c2622c7f-408a-53ec-a526-3bca0abca701",
     "name": "Jelly Beans 24.7 oz",
     "price": 3,
     "image": "https://images.tcdn.com.br/img/img_prod/388802/bala_de_goma_deliket_jelly_beans_frutas_acidas_sortida_700g_33641_1_c6458db465e2f8bbc4cffe6d090b61a6.jpg",
@@ -32,7 +32,7 @@
     "stock": 97
   },
   {
-    "id": 5,
+    "id": "9781d7e2-dc9b-50aa-84b7-c90741c301c8",
     "name": "Snickers 20 pcs * 1.59 oz each",
     "price": 15,
     "image": "https://a-static.mlcdn.com.br/1500x1500/chocolate-snickers-45g-c-20-mars/docemalu/16704/46605cf765335d444a3bc740370edf67.jpg",
@@ -40,7 +40,7 @@
     "stock": 76
   },
   {
-    "id": 6,
+    "id": "5acad90e-4f18-57f4-952a-a2808bb17b70",
     "name": "Twix 2.82 oz",
     "price": 1,
     "image": "https://americanas.vtexassets.com/arquivos/ids/509723/89153658_1SZ.jpg?v=638750830081870000",
@@ -48,7 +48,7 @@
     "stock": 25
   },
   {
-    "id": 7,
+    "id": "06ffcfb6-68e6-5506-ae4b-2149218730a4",
     "name": "White Chocolate with Strawberry 3.17 oz",
     "price": 3,
     "image": "https://images.tcdn.com.br/img/img_prod/861878/florestal_chocolate_barra_coracao_branco_90g_4131_1_ed673975f031be26bc946ddfd132c6ff.jpg",
@@ -56,7 +56,7 @@
     "stock": 25
   },
   {
-    "id": 8,
+    "id": "fe14e136-3b54-585f-a549-f083f6b35b12",
     "name": "White Chocolate with Sprinkles 3.17 oz",
     "price": 3,
     "image": "https://cf.shopee.com.br/file/0a93eaaff13b4b63ca95d6e2e9c6f4ee",
@@ -64,7 +64,7 @@
     "stock": 97
   },
   {
-    "id": 1,
+    "id": "68523d76-3883-52e1-ad0d-b692afb27624",
     "name": "KitKat Milk Chocolate 1.46 oz",
     "price": 2.25,
     "image": "https://d21wiczbqxib04.cloudfront.net/wFntq97XFwXwFMzE5EBI_YYEyEs=/fit-in/400x400/filters:fill(FFFFFF):background_color(white)/https://osuper-ecommerce-superhiperbom.s3.sa-east-1.amazonaws.com/f18c90e2-204257800auto.webp",
@@ -72,7 +72,7 @@
     "stock": 150
   },
   {
-    "id": 2,
+    "id": "df20e4bc-858a-5487-bfa1-68c7face8116",
     "name": "KitKat White Chocolate 1.46 oz",
     "price": 1.99,
     "image": "https://cdn.awsli.com.br/600x700/1305/1305297/produto/61974915/ef1ba809af.jpg",
@@ -80,7 +80,7 @@
     "stock": 120
   },
   {
-    "id": 3,
+    "id": "ed101c84-b8b0-5cee-bd80-c20789bbf783",
     "name": "KitKat Dark Chocolate 1.46 oz",
     "price": 1.99,
     "image": "https://tfckoe.vteximg.com.br/arquivos/ids/283524-280-280/18130f5d-c0bb-4f26-9af8-75c645d33331.jpg?v=638454182326430000",
@@ -88,7 +88,7 @@
     "stock": 100
   },
   {
-    "id": 4,
+    "id": "6c229633-368b-5010-8248-feac6b12525d",
     "name": "KitKat Vegan 1.46 oz",
     "price": 2.49,
     "image": "https://americanas.vtexassets.com/arquivos/ids/537288/4546515604_1_xlarge.jpg?v=638750834055830000",
@@ -96,7 +96,7 @@
     "stock": 80
   },
   {
-    "id": 5,
+    "id": "4dab274e-d8d4-586d-9144-81675e013b32",
     "name": "KitKat Hazelnut 1.46 oz",
     "price": 1.99,
     "image": "https://www.madewithnestle.ca/content/dam/nestlecanadaincprogram/kit-kat/en/products/Kitkat%20Hazelnut.jpg",
@@ -104,7 +104,7 @@
     "stock": 110
   },
   {
-    "id": 6,
+    "id": "04f06e92-6580-59dc-86c3-5548dcf33d38",
     "name": "KitKat Chunky 1.41 oz",
     "price": 1.99,
     "image": "https://www.americanas.com.br/_next/image?url=https%3A%2F%2Famericanas.vtexassets.com%2Farquivos%2Fids%2F545139%2F2914913316_1SZ.jpg%3Fv%3D638750836416570000&w=768&q=90",
@@ -112,7 +112,7 @@
     "stock": 140
   },
   {
-    "id": 9,
+    "id": "cca0fe58-ff40-58ac-8058-de874deb8ceb",
     "name": "Chocolate with Cereal 3.17 oz",
     "price": 3,
     "image": "https://images.tcdn.com.br/img/img_prod/861878/florestal_chocolate_barra_dinossauros_90g_4139_1_f89f7141ed4224ae32d4f548ec2a0373.jpg",
@@ -120,7 +120,7 @@
     "stock": 0
   },
   {
-    "id": 10,
+    "id": "546605c6-4226-510b-b52c-5682a8dcb667",
     "name": "Fini Tubes 2.82 oz",
     "price": 1.5,
     "image": "https://www.palaciodasfestas.com.br/pub/media/catalog/product/cache/6fb2a49fda90fa3bc27e8290a21c793e/t/u/tubes_morango_brilho_80g_1000x1000.jpg",
