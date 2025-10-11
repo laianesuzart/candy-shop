@@ -17,12 +17,12 @@ export const useCartStore = defineStore('cart', {
     },
   },
   actions: {
-    addItem(product) {
+    addItem(product, quantity = 1) {
       const item = this.items.find((i) => i.id === product.id);
       if (item) {
-        item.quantity++;
+        item.quantity += quantity;
       } else {
-        this.items.push({ ...product, quantity: 1 });
+        this.items.push({ ...product, quantity });
       }
     },
     decreaseItemQuantity(productId) {
