@@ -1,70 +1,76 @@
-# Getting Started with Create React App
+# [🧁 candy-shop](https://candyshop-eight.vercel.app/)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">An online candy store application built with Vue 3 🍬</p>
 
-## Available Scripts
+<p align="center">
+  <a href="#about">about</a> •
+  <a href="#tech-stack">tech stack</a> •
+  <a href="#getting-started">getting started</a> •
+  <a href="#layout">layout</a> • 
+  <a href="#author">author</a> •
+  <a href="#license">license</a>
+</p>
 
-In the project directory, you can run:
+## about
 
-### `yarn start`
+Candy Shop was originally a React app, later rewritten with Vue 3 for learning purposes.  
+The layout and structure were improved — you can check the first version under the `v1.0.0` tag.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+On the home page, you can add items to the cart and view product details by clicking the cards.  
+From the detail page, it’s also possible to add products to the cart, and the cart icon in the header takes you to the cart page, where you can increase or decrease quantities.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## tech stack
 
-### `yarn test`
+[![Vue.js](https://img.shields.io/badge/Vue.js-4A4A55?style=for-the-badge&logo=vue.js&color=4FC08D&logoColor=fff)](https://vuejs.org/)
+[![Vuetify](https://img.shields.io/badge/Vuetify-4A4A55?style=for-the-badge&logo=vuetify&color=1867C0&logoColor=fff)](https://vuetifyjs.com/)
+[![Pinia](https://img.shields.io/badge/Pinia-4A4A55?style=for-the-badge&logo=pinia&color=FFD859&logoColor=000)](https://pinia.vuejs.org/)
+[![Vite](https://img.shields.io/badge/Vite-4A4A55?style=for-the-badge&logo=vite&color=646CFF&logoColor=fff)](https://vite.dev/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## getting started
 
-### `yarn build`
+To get a local copy up and running, make sure you have [Node.js](https://nodejs.org/en/) and a package manager such as [npm](https://docs.npmjs.com/) installed on your device.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/laianesuzart/candy-shop.git
+   ```
+2. Navigate to the project folder:
+   ```bash
+   cd candy-shop
+   ```
+3. Install the dependencies:
+   ```bash
+   npm install
+   ```
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
+## layout
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<img width="1906" height="940" alt="Captura de tela 2025-10-11 212542" src="https://github.com/user-attachments/assets/e6b7033e-a40c-467b-90a2-b2a42bc5379a" />
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<img width="1903" height="936" alt="Captura de tela 2025-10-11 212618" src="https://github.com/user-attachments/assets/ca4f8f26-2cd4-4dda-8491-e4a3136a36d5" />
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+<img width="1901" height="934" alt="Captura de tela 2025-10-11 212728" src="https://github.com/user-attachments/assets/32339afb-d26e-41de-8cd5-2adcbd603147" />
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+<img width="1899" height="935" alt="Captura de tela 2025-10-11 212907" src="https://github.com/user-attachments/assets/46fdbd14-45ba-4ab2-88a1-55c2077c69bf" />
 
-## Learn More
+---
+✨ A small e-commerce app rebuilt in Vue 3 with a refreshed layout and smoother experience.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## author
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+**Laiane Suzart**:
+  <br>
+  [![Linkedin Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&link=https://www.linkedin.com/in/laianesuzart/)](https://www.linkedin.com/in/laianesuzart/)
+  [![Github Badge](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white&link=https://github.com/laianesuzart)](https://github.com/laianesuzart)
 
-### Code Splitting
+## license
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+This project is licensed under the [MIT](https://choosealicense.com/licenses/mit/) license.
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
